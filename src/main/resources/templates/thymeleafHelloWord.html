@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleaf测试页面</title>
+</head>
+<body>
+ <h1>thymeleaf测试页面</h1>
+<hr/>
+<h2 th:text="${emp.lastName}"></h2>
+
+<hr/>
+<h2>
+    <p th:each="dept : ${departments}">
+        <span th:text="${dept.id}"></span>:
+        <span th:text="${dept.departmentName}"></span>
+    </p>
+</h2>
+</body>
+</html>
